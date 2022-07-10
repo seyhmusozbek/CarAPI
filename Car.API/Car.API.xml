@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Car.API</name>
+    </assembly>
+    <members>
+        <member name="M:Car.API.Controllers.ChallengeController.Login(Car.Core.Models.LoginDTO)">
+            <summary>
+            This method returns token as {addressToken: "token"}. You can test by {"userName":"test-user", "password":"test1234"}
+            </summary>
+            <param name="userDTO"></param>
+            <returns>Returns token in an object {addressToken:[token]}</returns>
+        </member>
+        <member name="M:Car.API.Controllers.ChallengeController.GetCars">
+            <summary>
+            Gets the list of all car details in database. It needs token in header as {"Authorization": "Bearer [token]"}
+            </summary>
+            <returns>Returns list of all car details.</returns>
+        </member>
+        <member name="M:Car.API.Controllers.ChallengeController.AddCar(Car.Core.Models.CarDetailsDTO)">
+            <summary>
+            Adds a car details in database. It needs token in header as {"Authorization": "Bearer [token]"}
+            </summary>
+            <param name="carDTO"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
